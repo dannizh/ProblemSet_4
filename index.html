@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="list.js" defer></script>
+    <title>Problem Set</title>
+    <style>
+        .favorited {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Shopping List Memo</h1>
+        <button id="fav-btn">Favorite Only</button>
+        <button id="all-btn">Display All</button>
+        <ul id="list"></ul>
+    </section>
+    <section>
+        <h2>Add a new item</h2>
+        <div>
+            <label for="item-name" required>Item Name</label>
+            <input type="text" id="item-name">  
+        </div>
+        <div>
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name = "quantity" min="1" max="99" required>  
+        </div>
+        <div>
+            <input type="checkbox" id="favorite"/>
+            <label for="favorite">Favorite</label>
+        </div>
+        <button id="add-btn">Add</button>
+    </section>
+    
+</body>
+</html>
